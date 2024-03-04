@@ -1,0 +1,87 @@
+.container,
+.element {
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.row {
+  flex-flow: row wrap;
+}
+
+.col {
+  flex-flow: column wrap;
+}
+
+.element {
+  min-width: 100px;
+}
+
+.content {
+  flex: 1 100%;
+  color: #fff;
+  background-color: #cccccc;
+  padding: 20px;
+}
+
+.structure {
+  min-height: 480px;
+}
+
+.structure-1 {
+  flex: 1 55%;
+}
+
+.a {
+  flex: 1 40%;
+}
+
+.b {
+  flex: 1 60%;
+}
+
+.structure-1-2-1 {
+  flex: 1 20%;
+}
+
+.c,
+.d {
+  flex: 1 50%;
+}
+
+.e {
+  flex: 1 80%;
+}
+
+.structure-2 {
+  flex: 1 45%;
+}
+
+.f {
+  flex: 1 50%;
+}
+
+.structure-2-2 {
+  flex: 1 50%;
+}
+
+.g {
+  flex: 1 75%;
+}
+
+.h {
+  flex: 1 25%;
+}
+
+@media (max-width: 768px) {
+  .structure-1,
+  .structure-2,
+  .f,
+  .structure-2-2 {
+    flex: 1 100%;
+    min-height: 480px;
+  }
+}

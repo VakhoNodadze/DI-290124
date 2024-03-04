@@ -1,0 +1,22 @@
+#studentsMarks {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#studentsMarks thead th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#studentsMarks tbody td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#studentsMarks tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

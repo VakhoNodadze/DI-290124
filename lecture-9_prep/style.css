@@ -1,0 +1,168 @@
+:root {
+  --primary-color: #f9b218;
+  --my-fav-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: var(--primary-color);
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(186, 18, 186);
+  padding: 0 25px;
+  transition: 0.3s;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  display: block;
+  text-decoration: none;
+}
+.logo a p {
+  display: block;
+  width: 100%;
+  font-size: 25px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.navigation .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.navigation .menu li {
+  list-style-type: none;
+}
+
+.navigation .menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 40px 25px;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+.navigation .menu li a:hover {
+  padding: 35px 25px 45px 25px;
+  box-shadow: 0 -5px 0px #fff inset, 500px 0 0 rgba(255, 255, 255, 0.03);
+}
+
+/* divider */
+.hamburger,
+.toggle-menu {
+  display: none;
+}
+.hamburger {
+  position: relative;
+  width: 36px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+}
+.hamburger:after,
+.hamburger:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburger:after {
+  top: 10px;
+  width: 25px;
+}
+.hamburger::before {
+  top: -10px;
+}
+.toggle-menu {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.toggle-menu {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.navigation input:checked ~ .hamburger {
+  background-color: transparent;
+}
+.navigation input:checked ~ .hamburger:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+.navigation input:checked ~ .hamburger:before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+.navigation input:checked ~ .menu {
+  right: 0;
+  box-shadow: -20px 0 48px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger,
+  .toggle-menu {
+    display: block;
+  }
+  .toggle-menu {
+    opacity: 0;
+  }
+  .header {
+    padding: 10px 25px;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(186, 18, 186);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    padding-top: 65px;
+  }
+  .menu li {
+    width: 100%;
+  }
+}

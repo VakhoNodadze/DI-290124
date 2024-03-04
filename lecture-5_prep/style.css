@@ -1,0 +1,22 @@
+/* input {
+  background-color: gray;
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px;
+} */
+.bg-image {
+  background-image: url('./images/cosmos.jpeg');
+  background-size: cover;
+  height: 0;
+  width: 100%;
+  padding-bottom: 50%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

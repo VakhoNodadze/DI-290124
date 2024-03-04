@@ -1,0 +1,51 @@
+.div-1 {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  /* position: relative; */
+  animation: move 2s infinite;
+  /* animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: i; */
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(calc(50vw - 100px), 100px);
+    background-color: blue;
+    transform: scale(1.5);
+  }
+  100% {
+    transform: translate(calc(100vw - 100px), 0);
+    background-color: green;
+  }
+}
+
+.div-2 {
+  width: 100px;
+  height: 50px;
+  background-color: lightblue;
+  animation: moveSquare 15s infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0.02, 0.98);
+}
+
+@keyframes moveSquare {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(200px, 0);
+  }
+  50% {
+    transform: translate(200px, 200px);
+  }
+  75% {
+    transform: translate(0, 200px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

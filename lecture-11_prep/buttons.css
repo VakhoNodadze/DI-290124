@@ -1,0 +1,178 @@
+/* Basic Styling */
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Baloo Tamma', cursive;
+  color: #ddd;
+  font-size: 24px;
+}
+
+body {
+  background: #ddd;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #232323;
+  margin-bottom: 40px;
+}
+
+.animation {
+  width: 150px;
+  height: 35px;
+  padding: 5px 15px;
+  margin: 0 auto 35px auto;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0px 7px 10px -5px rgba(0, 0, 0, 0.4);
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Animations */
+.shake {
+  background: #303030;
+}
+
+.shake:hover {
+  animation: shake 0.22s linear 4;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounce {
+  background: #27ae60;
+}
+
+.bounce:hover {
+  animation: bounce 0.7s ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-8px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.flash {
+  background: #2c3e50;
+}
+
+.flash:hover {
+  animation: flash 0.7s ease-out 2;
+}
+
+@keyframes flash {
+  0%,
+  10% {
+    opacity: 1;
+  }
+  20%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulse {
+  background: #e6373a;
+}
+
+.pulse:hover {
+  animation: pulse 0.7s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  40%,
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.swing {
+  background: #16a085;
+}
+
+.swing:hover {
+  animation: swing 0.5s ease-out;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* The .bounce-in and .tada classes are not fully detailed in the provided SCSS. 
+Assuming they follow a similar structure, you might add keyframes and hover states as needed. */
+.bounce-in {
+  background: royalblue;
+}
+
+.tada {
+  background: royalblue;
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Shuriken';
+  src: url('./fonts/The\ Last\ Shuriken.ttf');
+}
+
+@font-face {
+  font-family: 'Monsterrati';
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.font {
+  font-family: 'Shuriken', sans-serif;
+  /* font-family: 'Monsterrati', sans-serif; */
+}
+button {
+  display: flex;
+  align-items: center;
+}
+.green {
+  color: green;
+}

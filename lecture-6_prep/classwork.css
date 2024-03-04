@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+
+.blue-container {
+  display: flex;
+  height: 10vh;
+  gap: 10px;
+}
+.blue {
+  background-color: blue;
+  flex: 1;
+}
+.blue-2 {
+  flex: 3;
+}
+
+.main-container {
+  display: flex;
+  gap: 10px;
+  height: 50vh;
+}
+.green {
+  background-color: green;
+  flex: 2;
+}
+.yellow-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 6;
+}
+.yellow-row {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+.yellow {
+  background-color: yellow;
+  font-size: 48px;
+}
+.yellow-1 {
+  flex: 4;
+}
+.yellow-2 {
+  flex: 1;
+}
+.yellow-single {
+  flex: 1;
+}
+.yellow-single-800px {
+  display: none;
+}
+.yellow-double-container {
+  display: flex;
+  gap: 10px;
+  height: 20vh;
+  flex: 5;
+}
+
+.yellow-triple {
+  display: flex;
+  gap: 10px;
+  height: 20vh;
+  margin-top: 10px;
+}
+.yellow-3 {
+  flex: 5;
+}
+.yellow-4 {
+  flex: 3;
+}
+
+.yellow-5 {
+  flex: 2;
+}
+.red-container {
+  height: 20vh;
+  background-color: red;
+}
+
+@media (max-width: 800px) {
+  .yellow-row {
+    flex-direction: column;
+  }
+  .yellow-1 {
+    flex: 1;
+  }
+  .yellow-single {
+    display: none;
+  }
+  .yellow-single-800px {
+    display: block;
+    height: 20vh;
+    margin-top: 10px;
+  }
+  .yellow-triple {
+    flex-direction: column;
+  }
+  .yellow-4,
+  .yellow-5 {
+    flex: 1;
+  }
+}

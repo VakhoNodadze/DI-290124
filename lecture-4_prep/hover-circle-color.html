@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #circle {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 50%;
+        transition: all 0.3s;
+      }
+
+      #red:hover ~ #circle {
+        background-color: red;
+      }
+
+      #blue:hover ~ #circle {
+        background-color: blue;
+      }
+
+      #green:hover ~ #circle {
+        background-color: green;
+      }
+
+      #yellow:hover ~ #circle {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="red" class="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+    <button id="yellow">Yellow</button>
+    <div id="circle"></div>
+  </body>
+</html>

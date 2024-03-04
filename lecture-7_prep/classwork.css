@@ -1,0 +1,13 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+body > * {
+  border: 5px solid lightblue;
+}
+
+div {
+  grid-template-columns: span 2;
+}

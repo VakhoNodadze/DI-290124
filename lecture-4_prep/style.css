@@ -1,0 +1,29 @@
+/* selects only paragraphs that have class intro */
+p.intro {
+  font: 48px;
+  color: red;
+  font-weight: bold;
+}
+div.intro:first-of-type {
+  color: yellow;
+  font-weight: bolder;
+}
+/* selects all paragraphs where the parent is div */
+div > p {
+  font: 24px;
+  color: purple;
+  font-weight: bold;
+}
+/* Selects the first p place immediately after a div */
+.first_parent + p {
+  font: 24px;
+  color: blue;
+  font-weight: bold;
+}
+.first_letter::first-letter {
+  font-size: 48px;
+  color: red;
+  font-weight: bold;
+  opacity: 0.3;
+  transition: all 0.3s;
+}

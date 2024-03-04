@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Lecture 5</title>
+  </head>
+  <body>
+    <h2>Text field</h2>
+    <div class="bg-image"></div>
+    <p>
+      The <strong>input type="text"</strong> defines a one-line text input
+      field:
+    </p>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="date" id="lname" name="lname" />
+      <input type="week" id="lname" name="lname" />
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+      <br />
+      <button>Submit</button>
+    </form>
+    <h2>Second Form</h2>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" />
+    </form>
+
+    <p>Note that the form itself is not visible.</p>
+    <p>Also note that the default width of a text field is 20 characters.</p>
+  </body>
+</html>
